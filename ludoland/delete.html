@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hesap Silme / Account Deletion – Ludo Land</title>
+<meta name="description" content="Ludo Land (Kızma Birader) hesap ve veri silme / account and data deletion">
+<style>
+  :root {
+    --bg: #F3F5FA;
+    --card: #FFFFFF;
+    --ink: #1F2A44;
+    --muted: #55617C;
+    --line: #D9DEEA;
+    --band: #1E2A4A;
+    --link: #1D4ED8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12182B;
+      --card: #1B2340;
+      --ink: #E8ECF6;
+      --muted: #A5AFC8;
+      --line: #2C3658;
+      --link: #8FB1FF;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .band {
+    background: var(--band);
+    color: #FFFFFF;
+    padding: 28px 20px 24px;
+  }
+  .band-inner { max-width: 760px; margin: 0 auto; }
+  .dots { display: flex; gap: 8px; margin-bottom: 14px; }
+  .dots span { width: 18px; height: 18px; border-radius: 50%; display: block; }
+  .dots .y { background: #F5C518; }
+  .dots .r { background: #E5484D; }
+  .dots .b { background: #3E7BFA; }
+  .dots .g { background: #30A46C; }
+  .band h1 { margin: 0 0 4px; font-size: 1.7rem; line-height: 1.25; }
+  .band p { margin: 0; color: #C9D2EA; font-size: 0.95rem; }
+  .langs { display: none; gap: 8px; margin-top: 16px; }
+  .js .langs { display: flex; }
+  .langs button {
+    font: inherit;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    background: transparent;
+    border: 1.5px solid #6B7BA8;
+    border-radius: 999px;
+    padding: 6px 16px;
+    cursor: pointer;
+  }
+  .langs button[aria-pressed="true"] { background: #FFFFFF; color: var(--band); border-color: #FFFFFF; }
+  .langs button:focus-visible { outline: 3px solid #F5C518; outline-offset: 2px; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 20px 56px; }
+  article[hidden] { display: none; }
+  article + article { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line); }
+  .js article + article { margin-top: 0; padding-top: 0; border-top: 0; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; line-height: 1.35; }
+  p, li { max-width: 68ch; }
+  ul, ol { padding-left: 1.2rem; margin: 8px 0; }
+  li { margin: 6px 0; }
+  a { color: var(--link); }
+  .note {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin: 20px 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .updated { color: var(--muted); font-size: 0.95rem; }
+  @media print {
+    .band { background: none; color: #000; padding: 0 0 12px; }
+    .band p { color: #333; }
+    .langs { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="band-inner">
+    <div class="dots" aria-hidden="true"><span class="y"></span><span class="r"></span><span class="b"></span><span class="g"></span></div>
+    <h1>Ludo Land &middot; Kızma Birader</h1>
+    <p>SNZ Studio</p>
+    <div class="langs" role="group" aria-label="Language / Dil">
+      <button type="button" data-lang="tr" aria-pressed="true">Türkçe</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== TÜRKÇE ===================== -->
+<article id="tr" lang="tr">
+  <h2 style="margin-top:0;font-size:1.5rem">Hesap ve Veri Silme</h2>
+  <p class="updated">Son güncelleme: 16 Ekim 2026</p>
+
+  <p>Ludo Land (Türkiye mağazasında Kızma Birader) uygulamasında e-posta veya şifreyle giriş yoktur; oyuncunuz, cihazınızda oluşturulan rastgele bir oyuncu numarasıyla tanınır. Geliştirici: SNZ Studio.</p>
+
+  <h2>Uygulamadan silme (önerilen, anında)</h2>
+  <ol>
+    <li>Uygulamayı açın ve ana ekranda <strong>Ayarlar</strong>'a girin.</li>
+    <li>Sayfanın en altındaki kırmızı <strong>Hesabımı Sil</strong> düğmesine dokunun.</li>
+    <li>Onay penceresinde <strong>Sil</strong>'e dokunun.</li>
+  </ol>
+
+  <h2>Silinen veriler</h2>
+  <ul>
+    <li>Oyuncu numaranız ve sunucudaki oyuncu kaydınız</li>
+    <li>Takma adınız</li>
+    <li>İstatistikleriniz (1., 2., 3., 4. olma ve yarıda bırakma sayıları, sıfırlama geçmişi)</li>
+    <li>Engel listeniz ve yaptığınız şikayetler</li>
+    <li>Cihazınızdaki istatistik kaydı</li>
+  </ul>
+
+  <h2>Saklanan veriler</h2>
+  <ul>
+    <li>Yasaklanmış bir oyuncu numarasının kaydı (takma ad silinerek): kötüye kullanımı önlemek için.</li>
+    <li>Başkalarının sizin hakkınızda yaptığı şikayet kayıtları (takma ad silinerek): güvenlik için gerekli olduğu sürece.</li>
+    <li>Sunucuya bağlanırken oluşan teknik bağlantı günlükleri (IP adresi) hesap kaydınızdan ayrıdır; barındırma hizmetinde sınırlı süre tutulur.</li>
+    <li>Reklam verileri Google AdMob tarafından Google'ın kendi politikasına göre işlenir; reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya silebilirsiniz.</li>
+  </ul>
+
+  <h2>Uygulamayı sildiyseniz</h2>
+  <p>Uygulamayı yeniden kurarsanız size yeni bir oyuncu numarası verilir; eski kaydınıza bağlanamazsınız. Eski kaydınızın silinmesini istiyorsanız <a href="mailto:snzstudio.official@gmail.com?subject=Hesap%20silme">snzstudio.official@gmail.com</a> adresine &ldquo;Hesap silme&rdquo; konusuyla yazın ve takma adınızı, biliyorsanız oyuncu numaranızı belirtin. Kaydınızı bulabilirsek siler, en geç 30 gün içinde yanıtlarız.</p>
+
+  <p>Ayrıntılar için <a href="./">Gizlilik Politikası</a>.</p>
+</article>
+
+<!-- ===================== ENGLISH ===================== -->
+<article id="en" lang="en">
+  <h2 style="margin-top:0;font-size:1.5rem">Account and Data Deletion</h2>
+  <p class="updated">Last updated: 16 October 2026</p>
+
+  <p>Ludo Land (called Kızma Birader in the Turkish store) has no email or password sign-in; your player is identified by a random player ID created on your device. Developer: SNZ Studio.</p>
+
+  <h2>Delete in the app (recommended, instant)</h2>
+  <ol>
+    <li>Open the app and go to <strong>Settings</strong> from the home screen.</li>
+    <li>Tap the red <strong>Delete My Account</strong> button at the bottom of the page.</li>
+    <li>Tap <strong>Delete</strong> in the confirmation window.</li>
+  </ol>
+
+  <h2>Data that is deleted</h2>
+  <ul>
+    <li>Your player ID and your player record on our server</li>
+    <li>Your nickname</li>
+    <li>Your statistics (1st, 2nd, 3rd, 4th place and left-early counts, reset history)</li>
+    <li>Your block list and the reports you made</li>
+    <li>The statistics saved on your device</li>
+  </ul>
+
+  <h2>Data that is kept</h2>
+  <ul>
+    <li>The record of a banned player ID (with the nickname removed), to prevent abuse.</li>
+    <li>Reports other players made about you (with the nickname removed), for as long as needed for safety.</li>
+    <li>Technical connection logs (IP address) created when connecting to the server are separate from your account record and are kept for a limited time by the hosting service.</li>
+    <li>Advertising data is processed by Google AdMob under Google's own policy; you can reset or delete your advertising ID in your device settings.</li>
+  </ul>
+
+  <h2>If you already uninstalled the app</h2>
+  <p>If you reinstall, you get a new player ID and cannot reach your old record. To have your old record deleted, email <a href="mailto:snzstudio.official@gmail.com?subject=Account%20deletion">snzstudio.official@gmail.com</a> with the subject &ldquo;Account deletion&rdquo; and include your nickname and, if you know it, your player ID. If we can find your record we delete it, and we reply within 30 days.</p>
+
+  <p>For details see the <a href="./">Privacy Policy</a>.</p>
+</article>
+
+</main>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  root.classList.add('js');
+  var arts = { tr: document.getElementById('tr'), en: document.getElementById('en') };
+  var btns = document.querySelectorAll('.langs button');
+  function show(l) {
+    if (!arts[l]) l = 'tr';
+    arts.tr.hidden = l !== 'tr';
+    arts.en.hidden = l !== 'en';
+    root.lang = l;
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-lang') === l ? 'true' : 'false');
+    }
+    try { history.replaceState(null, '', l === 'en' ? '#en' : '#tr'); } catch (e) {}
+  }
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function () { show(this.getAttribute('data-lang')); });
+  }
+  var h = (location.hash || '').replace('#', '');
+  var first = h === 'en' || h === 'tr' ? h : ((navigator.language || '').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+  show(first);
+})();
+</script>
+</body>
+</html>
